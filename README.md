@@ -1,4 +1,4 @@
-# computerSienceAndDesignPatternForBegginer
+# ComputerScienceAndDesignPatternForBegginer
 문돌이도 이해할 수 있는 컴퓨터 과학 저장소
 >비전공자로써 꿀리면 안된다는 마음으로 시작한 저장소입니다. 
 
@@ -16,7 +16,7 @@
 *   Git
 
 ## 방식
-> 매주 화, 수, 금 오후 7시 30분에 정한 주제를 발표하고 싱하가 검수(일정에 따라 참여 여부 상이)
+> 매주 일 오후 11시에 정한 주제를 발표하고 싱하가 검수(일정에 따라 참여 여부 상이)
 
 ## 커밋 방법
 > 커밋 메시지는 발표가 있는 날짜를 `yymmdd` 형식으로 표시하고 수정할 땐 `-x` 를 붙인다.
