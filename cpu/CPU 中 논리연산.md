@@ -128,3 +128,97 @@ PC 안의 CPU도 **매우 복잡한 고도의 IC**라고 할 수 있다.
 EX 는 Exclusive(배타적인) 의 약어입니다. 
 
 ![EXOR](https://electronicsphysics.com/wp-content/uploads/2021/06/Circuit-diagram-of-XOR-gate-using-basic-logic-gates.jpg)
+
+
+
+A에 1이 들어가고 B에 1이 들어간 상황을 봅시다. 
+
+위에 AND gate 에는 1 - 0 이 들어가 0 이 나옵니다
+
+아래 AND gate 에는 0 - 1 이 들어가 0 이 나옵니다. 
+
+0 - 0 이 마지막 OR gate 에 들어가 0이 나옵니다.
+
+
+
+## 드모르간의 정리
+
+그림으로 봅시다. 19 세기 영국의 수학자 드모르간, 이름도 간지나는 아우구스투스 드모르간.. 그 분의 정리를 소개해 볼까 합니다.
+
+![드모르간의정리](https://media.vlpt.us/images/tonyhan18/post/5ec2e35d-7549-49ef-9f22-1e163d6ba48c/image.png)
+
+
+
+논리 곱을 논리 합으로 치환가능 하다. 마찬가지로 논리 합을 논리 곱으로 치환 가능하다.  이게 무슨말인지는 그림을 보면 이해가 됩니다.
+
+![드모르간의 정리에 의한 치환](https://slidesplayer.org/slide/15757016/88/images/16/%EB%93%9C%EB%AA%A8%EB%A5%B4%EA%B0%84%EC%9D%98+%EC%A0%95%EB%A6%AC+%EB%85%BC%EB%A6%AC+%EA%B8%B0%ED%98%B8+A+B+Z%3DA%2BB+A+B+Z%3DA%E2%80%A2B+A%2BB+%3D+A%E2%80%A2B+A+B+Z%3DAB+A%E2%80%A2B+%3D+A%2BB.jpg)
+
+
+
+---
+
+# 연산하는 회로
+
+## 덧셈을 하는 회로 
+
+* 반가산기
+* AND 회로와 EXOR 회로를 연결해서 보여준다.
+* Sum 과 Carry 를 나타낼 수 있다. 왜 이런 모습을 가지게 됬는지 표를 보자
+
+| A    | B    | C    | S    |
+| ---- | ---- | ---- | ---- |
+| 0    | 0    | 0    | 0    |
+| 0    | 1    | 0    | 1    |
+| 1    | 0    | 0    | 1    |
+| 1    | 1    | 1    | 0    |
+
+S 가 있는 열만 보면 진리표가 무엇과 같은가? 그렇다 바로, EXOR 과 진리표가 같다. 
+
+C 가 있는 열은 AND 와 진리표가 같다. 이 둘을 잘 연결하면 이렇게 되겠지..?
+
+```swift
+func halfAdder(_ a: Bool, _ b: Bool) -> (Bool, Bool) {
+    var sum: Bool { a != b ? true : false }
+    var carry: Bool { a == true && b == true ? true : false}
+    return (carry, sum)
+}
+```
+
+대략적으로 생각해본 반가산기의 코드는 위와 같다.
+
+이 결과, 2가지의 출력이 가능해지는데, 하위 자리와 상위 자리가 가능해진다. 즉, **1비트 간 계산**이 가능해진다.
+
+그런데 말입니다. 여기서 Carry는 두 입력을 계산하고 나온 **자리 올림 값의 출력**입니다. 애초에 처음부터 **자리 올림 값을 입력** 할 수는 없을까요?
+
+이렇게 되면, Carry 를 시작부터 받을 수 있을 듯 합니다! 
+
+```swift
+func fullAdder(_ a: Bool, _ b: Bool, _ CarryIn: Bool) -> (carryOut: Bool, sum: Bool) {
+    var former : (carryOut: Bool, sum: Bool) { halfAdder(a, b) }
+    var latter : (carryOut: Bool, sum: Bool) { halfAdder(former.sum, CarryIn) }
+    var sum: Bool { latter.sum }
+    var carryOut: Bool { latter.carryOut || former.carryOut }
+    return (carryOut, sum)
+}
+```
+
+자 보면은, 반가산기의 경우에 
+
+**출력 값으로 나올 수 있는 경우의 수** 
+
+* 반가산기
+  * (0,0), (0,1), (1,0)
+* 전가산기
+  * (0,0), (0,1), (1,0), (1,1)
+
+![powerGap](https://blog.kakaocdn.net/dn/W0TLL/btqRx0uGeC2/KxbOgpwhzXXvwu1VtcmjNK/img.jpg)
+
+반가산기와 전가산기를 조합하면? 여러 비트를 계산할 수 있는 계산기가 나온다는 말씀!
+
+여기에는 한가지 아쉬운 점이 있는데, 앞자리의 숫자가 계산이 되기 전에, 뒷자리의 숫자는 가만히 기다릴 수 밖에 없다는 것이다.
+
+그렇다면, 각 자리마다 발생할 자리 올림 입력을 미리 알 수 있다면? 모든 자리가 동시에 자기 일을 처리 할 수 있다. 
+
+이것을 자리 올림 선견 가산기(carry look ahead adder) 라고 한다. 
+
+나중에 **자리 올림 선견 가산기**와 **뺄셈기**를 만들어보는 코드를 짜봐도 재미있을 듯하다.
