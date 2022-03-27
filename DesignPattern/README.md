@@ -1,28 +1,28 @@
 
 ## 팩토리 메서드 패턴
 
-   ## Class의 인스턴스를 만들 때 어떤 인스턴스를 만들 것인지는 하위객체가 처리하도록 하라!
-    
-    ![스크린샷 2022-03-06 오전 10.11.48.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa1ce5ca-4efa-4fdb-99cb-b8c9365ea62b/스크린샷_2022-03-06_오전_10.11.48.png)
-    
-    - **Product(프로토콜)**
+### Class의 인스턴스를 만들 때 어떤 인스턴스를 만들 것인지는 하위객체가 처리하도록 하라!
+   
+   ![스크린샷 2022-03-06 오후 5 26 41](https://user-images.githubusercontent.com/80263729/156915244-63d42d8d-3941-401b-a33c-3b35207f06d1.png)
+
+   - **Product(프로토콜)**
         - Creator와 하위 클래스가 생성할 수 있는 동일한 인터페이스
         
-    - **Concreate Product(클래스)**
+   - **Concreate Product(클래스)**
         - Product가 선언한 인터페이스로 만든 실제 클래스들.
         
-    - **Creator(프로토콜)**
+   - **Creator(프로토콜)**
         - 새로운 객체를 반환하는 팩토리 메서드를 선언합니다.
         - 여기서 반환하는 객체는 Product 인터페이스를 준수하고 있어야 해요.
         
-    - Concrete Creator(클래스)
+   - Concrete Creator(클래스)
         - 기본 팩토리 메서드를 override 하여 서로 다른 Product 객체를 만듭니다.
     
-    ### 팩토리 패턴은 언제 사용하는가?
+   ### 팩토리 패턴은 언제 사용하는가?
     
-    - 예시로 간단하게 두개의 Player클래스를 만들어보았다.
+   - 예시로 간단하게 두개의 Player클래스를 만들어보았다.
         
-        ```swift
+       ~~~swift
         
         //MARK: -- Concrete Product
         class MusicPlayer  {
@@ -76,22 +76,23 @@
         
         videoPlayer.play()
         videoPlayer.changeContent(name: "구찌의 CS강의")
-        ```
+        ~~~
         
     
-    - 이를 그림으로 표현하면?
-        
-        ![스크린샷 2022-03-06 오전 10.50.57.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a2adbc16-96cd-4102-a240-9317f681169d/스크린샷_2022-03-06_오전_10.50.57.png)
+   - 이를 그림으로 표현하면?  
+     ![스크린샷 2022-03-06 오후 5 27 19](https://user-images.githubusercontent.com/80263729/156915267-d781704d-2288-45c3-ab65-7ba68d15cd52.png)
+   
+   
         
     
-    - 이때 새로운 Player를 추가하고싶으면 또다른 Player를 만들고 프로퍼티와 인터페이스를 정의해주어야 할 것이다.
+   - 이때 새로운 Player를 추가하고싶으면 또다른 Player를 만들고 프로퍼티와 인터페이스를 정의해주어야 할 것이다.
         
         이럴 경우 `수정과 추가에 용이하게 하기위해` Factory패턴을 사용한다!
         
     
-    - 위 코드를 팩토리 패턴으로 바꾸어보았다.
-        
-        ```swift
+   - 위 코드를 팩토리 패턴으로 바꾸어보았다.
+       
+        ~~~swift
         
         //MARK: -- Product Interface
         protocol Player {
@@ -176,15 +177,15 @@
         
         videoPlayer.play()
         videoPlayer.changeContent(name: "구찌의 CS강의")
-        ```
+        ~~~
         
     
-    - 그림으로 나타낸 모습
-        
-        ![스크린샷 2022-03-06 오전 10.54.40.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ffabe095-ba84-4622-b789-eb7e5248445b/스크린샷_2022-03-06_오전_10.54.40.png)
-        
+   - 그림으로 나타낸 모습  
+![스크린샷 2022-03-06 오후 5 27 59](https://user-images.githubusercontent.com/80263729/156915288-d17afb78-5e82-40eb-8679-b827e2929295.png)
+
+
     
-    - 결론.
+   - 결론.
         
         물론 매우 복잡해진? 모습이지만 한번 만들때 잘만들어 놓으면 새로운 Player를 추가할때 
         
@@ -193,4 +194,4 @@
         새로운 player만들때의 번거러움도 어느정도 줄인 모습을 볼 수 있다.
         
     
-    출처:[https://icksw.tistory.com/237](https://icksw.tistory.com/237), [http://coldwm.github.io/blog/designpattern/java/2015/05/24/Factory-Method-Pattern.html](http://coldwm.github.io/blog/designpattern/java/2015/05/24/Factory-Method-Pattern.html)
+   [출처]:([https://icksw.tistory.com/237](https://icksw.tistory.com/237), [http://coldwm.github.io/blog/designpattern/java/2015/05/24/Factory-Method-Pattern.html)(http://coldwm.github.io/blog/designpattern/java/2015/05/24/Factory-Method-Pattern.html)
