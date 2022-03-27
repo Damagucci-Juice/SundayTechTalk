@@ -161,6 +161,8 @@ A에 1이 들어가고 B에 1이 들어간 상황을 봅시다.
 
 ## 덧셈을 하는 회로 
 
+![반가산기](https://t1.daumcdn.net/cfile/tistory/99167E3359B47D320A)
+
 * 반가산기
 * AND 회로와 EXOR 회로를 연결해서 보여준다.
 * Sum 과 Carry 를 나타낼 수 있다. 왜 이런 모습을 가지게 됬는지 표를 보자
@@ -192,6 +194,10 @@ func halfAdder(_ a: Bool, _ b: Bool) -> (Bool, Bool) {
 
 이렇게 되면, Carry 를 시작부터 받을 수 있을 듯 합니다! 
 
+**전가산기**
+
+<img src="https://itwiki.kr/images/3/39/%EC%A0%84%EA%B0%80%EC%82%B0%EA%B8%B0.png" alt="전가산기" style="zoom:200%;" />
+
 ```swift
 func fullAdder(_ a: Bool, _ b: Bool, _ CarryIn: Bool) -> (carryOut: Bool, sum: Bool) {
     var former : (carryOut: Bool, sum: Bool) { halfAdder(a, b) }
@@ -210,6 +216,8 @@ func fullAdder(_ a: Bool, _ b: Bool, _ CarryIn: Bool) -> (carryOut: Bool, sum: B
   * (0,0), (0,1), (1,0)
 * 전가산기
   * (0,0), (0,1), (1,0), (1,1)
+
+![연속전가산기!](https://www.circuitstoday.com/wp-content/uploads/2012/03/ripple-carry-adder.png)
 
 ![powerGap](https://blog.kakaocdn.net/dn/W0TLL/btqRx0uGeC2/KxbOgpwhzXXvwu1VtcmjNK/img.jpg)
 
