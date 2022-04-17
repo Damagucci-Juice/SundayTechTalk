@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HWU-RK-jfK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="55V-Cd-S6R">
+            <objects>
+                <viewController id="HWU-RK-jfK" customClass="ViewController" customModule="MVVMRefactory" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7nk-Xd-FCO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재시간은?!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDm-rl-07z">
+                                <rect key="frame" x="163.5" y="344" width="87" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8s2-99-4Z4">
+                                <rect key="frame" x="20" y="399.5" width="374" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shs-yj-wcs">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Yesterday"/>
+                                        <connections>
+                                            <action selector="onYesterday:" destination="HWU-RK-jfK" eventType="touchUpInside" id="8me-ff-nQL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf4-eS-a2h">
+                                        <rect key="frame" x="131.5" y="0.0" width="111" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Now"/>
+                                        <connections>
+                                            <action selector="onNow:" destination="HWU-RK-jfK" eventType="touchUpInside" id="1zO-dO-eht"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-XT-aRO">
+                                        <rect key="frame" x="262.5" y="0.0" width="111.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Tomorrow"/>
+                                        <connections>
+                                            <action selector="onTomorrow:" destination="HWU-RK-jfK" eventType="touchUpInside" id="N7i-3x-la5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="X8W-u4-Fjb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A17-jI-Eve"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CDm-rl-07z" firstAttribute="centerX" secondItem="7nk-Xd-FCO" secondAttribute="centerX" id="9hZ-ZN-Xyt"/>
+                            <constraint firstItem="8s2-99-4Z4" firstAttribute="top" secondItem="CDm-rl-07z" secondAttribute="bottom" constant="35" id="KbF-lH-4uE"/>
+                            <constraint firstItem="8s2-99-4Z4" firstAttribute="centerX" secondItem="7nk-Xd-FCO" secondAttribute="centerX" id="gbM-Jl-7qa"/>
+                            <constraint firstItem="CDm-rl-07z" firstAttribute="top" secondItem="A17-jI-Eve" secondAttribute="top" constant="300" id="hsN-MS-K0A"/>
+                            <constraint firstItem="8s2-99-4Z4" firstAttribute="leading" secondItem="A17-jI-Eve" secondAttribute="leading" constant="20" id="rJo-zF-sfG"/>
+                            <constraint firstItem="A17-jI-Eve" firstAttribute="trailing" secondItem="8s2-99-4Z4" secondAttribute="trailing" constant="20" id="rTe-CC-o2p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datetimeLabel" destination="CDm-rl-07z" id="aCZ-FN-uhc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzr-Nl-X0F" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
