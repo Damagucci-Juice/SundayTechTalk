@@ -195,3 +195,13 @@
         
     
    [출처]:([https://icksw.tistory.com/237](https://icksw.tistory.com/237), [http://coldwm.github.io/blog/designpattern/java/2015/05/24/Factory-Method-Pattern.html)(http://coldwm.github.io/blog/designpattern/java/2015/05/24/Factory-Method-Pattern.html)
+   
+   - - -
+   ## MVVM 디자인 패턴 연습
+   MVVM을 이해하기 위해 영상과 글을 참고해서 예제 앱을 만들어보았다.  
+   참고: [https://beomy.tistory.com/43](https://beomy.tistory.com/43)
+
+[https://eeyatho.tistory.com/77](https://eeyatho.tistory.com/77) MVVM 탄생 이유
+
+[https://www.youtube.com/watch?v=M58LqynqQHc](https://www.youtube.com/watch?v=M58LqynqQHc)  MVVM 예제
+   
