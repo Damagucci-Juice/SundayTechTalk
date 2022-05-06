@@ -33,7 +33,7 @@
 
 ---
 # 개발 일반
-
+  * [[구찌] 동시성 프로그래밍](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/ETC/MetaType%2C%20DependencyInjection.playground/ConcurrencyProgramming.md)
 # CPU
   * [[구찌] 논리연산](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/CPU%20%E4%B8%AD%20%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0.md)
   * [[구찌] 이중모드와 인터럽트](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/DoubleModeAndInterrupt.md)
