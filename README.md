@@ -1,9 +1,8 @@
 ## 구성원
 
 
-|피그백|알렉스|다마구찌-주스|
+|[피그백](https://github.com/Piggy-Seob)|[알렉스](https://github.com/SongTaehwan)| [다마구찌-주스](https://github.com/Damagucci-Juice)|
 |----|----|----|
-|https://github.com/Piggy-Seob | https://github.com/SongTaehwan | https://github.com/Damagucci-Juice |
 
 ## 내용 구성
 *   개발 일반
@@ -34,7 +33,7 @@
 
 ---
 # 개발 일반
-  * [[피그백] SOLID](https://seob-p.tistory.com/13)
+
 # CPU
   * [[구찌] 논리연산](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/CPU%20%E4%B8%AD%20%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0.md)
   * [[구찌] 이중모드와 인터럽트](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/DoubleModeAndInterrupt.md)
@@ -51,11 +50,15 @@
   * [[구찌] 여러가지 기억장치](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/memory/VariousMemory.md)
   * [[구찌] 메모리와 CPU의 이모저모](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/memory/%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20CPU%EC%9D%98%20%EC%9D%B4%EB%AA%A8%EC%A0%80%EB%AA%A8.md)
 # NETWORK
-  * [[피그백] 네트워크 종합](https://www.notion.so/499f39ff169446d98789afc2b7abd6d3)
+  * [[피그백] 네트워크](https://www.notion.so/499f39ff169446d98789afc2b7abd6d3)
 # GIT
-  * [[피그백] Git 종합](https://marble-walk-de2.notion.site/git-57285da346114348b7823acf96d9b49e)
-  * [[ㄱㅜ]
+  * [[피그백] Git](https://marble-walk-de2.notion.site/git-57285da346114348b7823acf96d9b49e)
+  * [[구찌] PR](https://drive.google.com/file/d/1yglYI6dVw7pT6MVPtKXRtJJfluYi3HvP/view?usp=sharing)
 
 # Design Pattern
-
+  * [[피그백] 팩토리 메서드 패턴](https://github.com/P-SeoB/computerSienceAndDesignPatternForBegginer/tree/pigbag/DesignPattern/FactoryMethodPattern)
+  * [[피그백] MVVM](https://github.com/P-SeoB/computerSienceAndDesignPatternForBegginer/tree/pigbag/DesignPattern/MVVMPractice)
+  * [[피그백] SOLID](https://seob-p.tistory.com/13)
 # Swift
+  * [[피그백] 값 타입과 참조 타입 성능 이해](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/tree/master/Performance)
+  * [[피그백] 메타타입](https://seob-p.tistory.com/12)
