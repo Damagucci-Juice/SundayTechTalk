@@ -1,27 +1,61 @@
-# ComputerScienceAndDesignPatternForBegginer
-문돌이도 이해할 수 있는 컴퓨터 과학 저장소
->비전공자로써 꿀리면 안된다는 마음으로 시작한 저장소입니다. 
-
-## 급훈
-> 컴퓨터 관련학과를 진학하지 않은건 죄가 아니지만 cs를 모르는건 죄가 맞습니다. 
-
 ## 구성원
-* 싱하, 피그백, 다마구찌-주스
+
+
+|피그백|알렉스|다마구찌-주스|
+|----|----|----|
+|https://github.com/Piggy-Seob | https://github.com/SongTaehwan | https://github.com/Damagucci-Juice |
 
 ## 내용 구성
+*   개발 일반
 *   Cpu
 *   Network
 *   Memory 
-*   DesignPattern
+*   Design Pattern
 *   Git
+*   Swift
 
 ## 방식
-> 매주 일 오전 11시에 정한 주제를 발표하고 싱하가 검수(일정에 따라 참여 여부 상이)
+> 매주 일 오전 10시에 정한 주제를 발표
 
 ## 커밋 방법
-> 커밋 메시지는 발표가 있는 날짜를 `yymmdd` 형식으로 표시하고 수정할 땐 `-x` 를 붙인다.
-```
-git commit -m "network 220122 -2"
-```
-> 2022년 1월 22일에 네트워크를 공부하고 2번 째 수정함
 
+    *  [날짜_작성자] 주제: 내용
+    * 예시 --> `[220506_피그백] CPU: ALU 작동 방식`
+    
+## README.md 작성 방식
+```
+# CPU
+    * [피그백] ALU 작동 방식  // 줄 간 공백 없음에 유의
+    * [구찌] 플립플롭의 종류 정리
+    
+# MEMORY
+    * [피그백] 가상 메모리 할당 방식(페이징)
+```
+
+---
+# 개발 일반
+  * [[피그백] SOLID](https://seob-p.tistory.com/13)
+# CPU
+  * [[구찌] 논리연산](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/CPU%20%E4%B8%AD%20%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0.md)
+  * [[구찌] 이중모드와 인터럽트](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/DoubleModeAndInterrupt.md)
+  * [[구찌] 계산 처리 과정](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/HowCanCPUProcess.md)
+  * [[구찌] 프로세스와 쓰레드](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/ProcessAndThread.md)
+  * [[구찌] CPU 명령의 종류](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/SortOfCommand.md)
+  * [[구찌] CPU가 하는 일](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/WhatDoesCPUWork.md)
+  * [[구찌] 인터럽트가 발생하면 생기는 일](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/interrupt.md)
+  * [[구찌] 기억하는 회로](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/%EA%B8%B0%EC%96%B5%ED%95%98%EB%8A%94%20%ED%9A%8C%EB%A1%9C.md)
+# MEMORY
+  * [[피그백] Cache](https://seob-p.tistory.com/11)
+    * [캐시 실습 저장소](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/tree/master/memory/CachingPractice)   
+  * [[피그백] 메모리 일반](https://marble-walk-de2.notion.site/61026ae9875b4e2ea988e29aff0c1a57)
+  * [[구찌] 여러가지 기억장치](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/memory/VariousMemory.md)
+  * [[구찌] 메모리와 CPU의 이모저모](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/memory/%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20CPU%EC%9D%98%20%EC%9D%B4%EB%AA%A8%EC%A0%80%EB%AA%A8.md)
+# NETWORK
+  * [[피그백] 네트워크 종합](https://www.notion.so/499f39ff169446d98789afc2b7abd6d3)
+# GIT
+  * [[피그백] Git 종합](https://marble-walk-de2.notion.site/git-57285da346114348b7823acf96d9b49e)
+  * [[ㄱㅜ]
+
+# Design Pattern
+
+# Swift
