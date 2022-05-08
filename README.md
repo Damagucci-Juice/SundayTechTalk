@@ -79,3 +79,4 @@
 - [[피그백] 값 타입과 참조 타입 성능 이해](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/tree/master/Performance)
 - [[피그백] 메타타입](https://seob-p.tistory.com/12)
 - [[Alex] Opaque Type](./ETC/Opaque%20Type/README.md)
+- [[피그백] 깊은 복사 & 얕은 복사](https://seob-p.tistory.com/14)
