@@ -81,7 +81,7 @@
 - [[피그백] 메타타입](https://seob-p.tistory.com/12)
 - [[Alex] Opaque Type](./ETC/Opaque%20Type/README.md)
 - [[피그백] 깊은 복사 & 얕은 복사](https://seob-p.tistory.com/14)
-
+- [[피그백] Erasure Type](https://seob-p.tistory.com/19)
 # Xcode
 
 - [[Alex] Code Signing](https://songtaehwan.github.io/code-sigining/)
