@@ -5,21 +5,23 @@
 
 ## 내용 구성
 
-- 개발 일반
-- Cpu
-- Network
-- Memory
-- Design Pattern
-- Git
-- Swift
+- [개발 일반](#개발-일반)
+- [CPU](#cpu)
+- [Network](#network)
+- [Memory](#memory)
+- [Design Pattern](#design-pattern)
+- [Git](#git)
+- [Swift](#swift)
+- [Xcode](#xcode)
+- [Test](#test)
 
 ## 방식
 
-> 매주 일 오전 10시에 정한 주제를 발표
+> 매주 일요일 오전 10시 각자 선정한 주제 발표
 
-## 커밋 방법
+## 커밋 규칙
 
-    *  [날짜_작성자] 주제: 내용
+    * [날짜_작성자] 주제: 내용
     * 예시 --> `[220506_피그백] CPU: ALU 작동 방식`
 
 ## README.md 작성 방식
