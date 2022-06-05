@@ -38,7 +38,7 @@
 ---
 
 # 개발 일반
--[[구찌] 함께 일하기](https://damagucci-juice.tistory.com/80)
+- [[구찌] 함께 일하기](https://damagucci-juice.tistory.com/80)
 
 # CPU
 
