@@ -38,9 +38,7 @@
 ---
 
 # 개발 일반
-
-- [[구찌] 동시성 프로그래밍](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/ETC/ConcurrencyProgramming.md)
-- [[구찌] 함수형 프로그래밍](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/ETC/FunctionalProgramming.md)
+-[[구찌] 함께 일하기](https://damagucci-juice.tistory.com/80)
 
 # CPU
 
@@ -85,6 +83,8 @@
 - [[피그백] 깊은 복사 & 얕은 복사](https://seob-p.tistory.com/14)
 - [[피그백] Erasure Type](https://seob-p.tistory.com/19)
 - [[Alex] clipToBounds vs. maskToBounds](https://songtaehwan.github.io/clipToBounds-maskToBounds/)
+- [[구찌] 동시성 프로그래밍](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/ETC/ConcurrencyProgramming.md)
+- [[구찌] 함수형 프로그래밍](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/ETC/FunctionalProgramming.md)
 
 # Xcode
 
