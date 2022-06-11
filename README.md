@@ -42,6 +42,7 @@
 
 # CPU
 
+- [[구찌] 비트(주세요)](https://damagucci-juice.tistory.com/81)
 - [[구찌] 논리연산](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/CPU%20%E4%B8%AD%20%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0.md)
 - [[구찌] 이중모드와 인터럽트](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/DoubleModeAndInterrupt.md)
 - [[구찌] 계산 처리 과정](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/HowCanCPUProcess.md)
