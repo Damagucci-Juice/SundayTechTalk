@@ -97,4 +97,4 @@
 
 # 보안
 
--[[피그백] OAuth](https://seob-p.tistory.com/20)
+- [[피그백] OAuth](https://seob-p.tistory.com/20)
