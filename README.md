@@ -86,6 +86,7 @@
 - [[Alex] clipToBounds vs. maskToBounds](https://songtaehwan.github.io/clipToBounds-maskToBounds/)
 - [[구찌] 동시성 프로그래밍](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/ETC/ConcurrencyProgramming.md)
 - [[구찌] 함수형 프로그래밍](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/ETC/FunctionalProgramming.md)
+- [[피그백] Method Swizzling](https://seob-p.tistory.com/23)
 
 # iOS
 - [[피그백] View가 화면에 그려지는 과정](https://seob-p.tistory.com/22)
