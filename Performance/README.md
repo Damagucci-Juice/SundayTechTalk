@@ -1,6 +1,6 @@
 ### 스위프트의 성능 이해하기
 
-[출처:유용하님의 스위프트 성능 이해하기](https://haningya.tistory.com/382) 를 시청하면서 키워드들을 살펴보자
+[출처:유용하님의 스위프트 성능 이해하기](https://www.youtube.com/watch?v=z1Gf6EosaUQ) 를 시청하면서 키워드들을 살펴보자
 
 - (Semantics? -> 프로그램이 무엇을 어떻게 수행할지를 나타내며, 특정 기능의 의미가 다른 부분의 상호연관에 의해서 설명되는 경우가 많다.  
 [Semntics vs Syntax](https://leadbiz.tistory.com/377)
