@@ -56,6 +56,7 @@
 - [[구찌] 인터럽트가 발생하면 생기는 일](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/interrupt.md)
 - [[구찌] 기억하는 회로](https://github.com/Damagucci-Juice/ComputerScienceAndDesignPatternForBegginer/blob/master/cpu/%EA%B8%B0%EC%96%B5%ED%95%98%EB%8A%94%20%ED%9A%8C%EB%A1%9C.md)
 - [[구찌] 오퍼랜드](https://github.com/Damagucci-Juice/SundayTechTalk/blob/master/cpu/operand.md)
+- [[Alex] 컴퓨터 시스템 구조와 CPU 동작 원리](https://cyclic-gray-2b1.notion.site/System-Structure-Program-Execution-2988a95e1b894aa28aa1827dbdfe9502)
 
 # MEMORY
 
