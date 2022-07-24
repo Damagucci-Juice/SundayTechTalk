@@ -40,6 +40,10 @@
 # 개발 일반
 - [[구찌] 함께 일하기](https://damagucci-juice.tistory.com/80)
 
+# 운영체제
+- [[구찌] OS](https://damagucci-juice.tistory.com/107)
+
+
 # CPU
 
 - [[구찌] 비트(주세요)](https://damagucci-juice.tistory.com/81)
