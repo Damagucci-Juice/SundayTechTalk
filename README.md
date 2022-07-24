@@ -1,6 +1,6 @@
 ## 구성원
 
-| [피그백](https://github.com/Piggy-Seob) | [알렉스](https://github.com/SongTaehwan) | [다마구찌-주스](https://github.com/Damagucci-Juice) | [카이]() |
+| [피그백](https://github.com/Piggy-Seob) | [알렉스](https://github.com/SongTaehwan) | [다마구찌-주스](https://github.com/Damagucci-Juice) | [카이](https://github.com/TaeKyeongKim) |
 | --------------------------------------- | ---------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |
 
 ## 내용 구성
